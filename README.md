@@ -93,5 +93,12 @@ Unlike standard "loggers," this system implements an **Active Remediation Protoc
 3. **UI/UX**: Streamlit Command Center (Real-time Logic Heatmap)
 4. **Data Residency**: Localized Manuscripts with cloud-based API Secrets Management.
 
+## 📂 Data Provisioning & Self-Healing
+To maintain proprietary security, the `data/manuscripts/` directory is excluded from this repository. 
+
+**To run this engine:**
+1. Create a local directory: `data/manuscripts/`.
+2. Place your insurance XML manuscripts (Regional and Global) into that folder.
+3. Launch the app. The **AETHER Indexer** will detect the new files and autonomously reconstruct the Knowledge Fabric (`vectors.npy` and `metadata.json`).
 ---
 
