@@ -1,0 +1,26 @@
+# --- Security & Credentials ---
+.env
+.env.*
+secrets.toml
+auth.json
+.streamlit/secrets.toml
+
+# --- Project Data & Logic Fabric ---
+# Hide processed vectors and local XML caches
+data/processed/
+*.xml
+*.npy
+*.json
+
+# --- Python Environment ---
+__pycache__/
+env/
+venv/
+.venv/
+.Python
+*.py[cod]
+
+# --- Logs & OS Files ---
+*.log
+.DS_Store
+Thumbs.db

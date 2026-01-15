@@ -1,0 +1,18 @@
+# --- Interface & Framework ---
+streamlit
+python-dotenv
+
+# --- Intelligence & Orchestration (AetherEngine) ---
+langgraph
+langchain-openai
+openai
+
+# --- Logic & Data Handling ---
+lxml
+numpy
+pandas
+
+# --- Networking & Security ---
+requests
+urllib3
+jira
