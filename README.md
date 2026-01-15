@@ -34,34 +34,33 @@ The following **Mermaid** specification defines the stateful transition from raw
 
 ```mermaid
 graph TD
-    subgraph KNOWLEDGE_FABRIC ["KNOWLEDGE_FABRIC (Layer 1)"]
+    subgraph KNOWLEDGE_FABRIC [KNOWLEDGE_FABRIC Layer 1]
         A1[Regional Overlay XML] --> B{Aether_Indexer}
         A2[Global Master XML] --> B
         B --> C[Normalized Logic Map: metadata.json]
         B --> D[Semantic Vector Space: vectors.npy]
     end
 
-    subgraph GOVERNANCE_ENGINE ["GOVERNANCE_ENGINE (Layer 2)"]
+    subgraph GOVERNANCE_ENGINE [GOVERNANCE_ENGINE Layer 2]
         E[Inquiry] --> F[Agentic Router: LangGraph]
         F --> G{Logic Synthesis}
-        G -- "Logic Gap Detected" --> H[Autonomous Inheritance Loop]
-        G -- "Validated Node" --> I[Veritas Certification]
+        G -- "Logic Gap" --> H[Autonomous Inheritance Loop]
+        G -- "Validated" --> I[Veritas Certification]
         H --> I
     end
 
-    subgraph REMEDIATION_FABRIC ["REMEDIATION_FABRIC (Layer 3)"]
+    subgraph REMEDIATION_FABRIC [REMEDIATION_FABRIC Layer 3]
         I --> J[Veritas Output]
         J --> K{Remediation Logic}
-        K -- "Anomaly: Create" --> L[Jira: Initialization]
-        K -- "Resolved: Self-Heal" --> M[Jira: Auto-Closure]
-        K -- "Critical: Escalate" --> N[Human-in-the-Loop]
+        K -- "Anomaly" --> L[Jira: Initialization]
+        K -- "Resolved" --> M[Jira: Auto-Closure]
+        K -- "Critical" --> N[Human-in-the-Loop]
     end
 
     style H fill:#003366,color:#fff,stroke-width:2px
     style M fill:#1b5e20,color:#fff,stroke-width:2px
     style L fill:#b71c1c,color:#fff,stroke-width:2px
     style J font-weight:bold,stroke:#000
-
 ```
 
 ---
